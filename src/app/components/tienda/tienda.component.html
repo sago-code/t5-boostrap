@@ -1,0 +1,357 @@
+<!-- Carrusel de imágenes promocionales -->
+<div class="carousel-container">
+    <swiper-container
+        loop="true"
+        autoplay="true"
+        navigation="true"
+        pagination="true"
+        class="mySwiper"
+    >
+        <swiper-slide>
+            <img src="https://peruconnection.com.pe/wp-content/uploads/2021/04/HONOR_50_-min.jpg" class="d-block w-100" alt="Promoción 1">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="https://cdn.pixabay.com/photo/2017/01/22/12/07/imac-1999636_1280.png" class="d-block w-100" alt="Samsung Galaxy">
+        </swiper-slide>
+        <swiper-slide>
+            <img src="https://www.apple.com/v/iphone-15-pro/a/images/meta/iphone-15-pro_overview__f8jz7aagka2q_og.png" class="d-block w-100" alt="iPhone 15 Pro">
+        </swiper-slide>
+    </swiper-container>
+</div>
+
+<!-- Contenedor principal -->
+<div class="container-fluid">
+    <div class="row">
+        <!-- Barra lateral con filtros mejorada -->
+        <div class="col-lg-3 col-md-4 mb-4">
+            <div class="card shadow-sm border-0 rounded-3 mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0 fs-5">Filtros</h4>
+                </div>
+                <div class="card-body">
+                    <h5 class="border-bottom pb-2 mb-3">Categoría</h5>
+                    <div class="list-group mb-4">
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Electrónica
+                            <span class="badge bg-primary rounded-pill">24</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Ropa
+                            <span class="badge bg-primary rounded-pill">18</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Hogar
+                            <span class="badge bg-primary rounded-pill">12</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            Deportes
+                            <span class="badge bg-primary rounded-pill">9</span>
+                        </a>
+                    </div>
+                    
+                    <h5 class="border-bottom pb-2 mb-3">Precio</h5>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Menos de $50</a>
+                        <a href="#" class="list-group-item list-group-item-action">$50 - $100</a>
+                        <a href="#" class="list-group-item list-group-item-action">$100 - $200</a>
+                        <a href="#" class="list-group-item list-group-item-action">Más de $200</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ofertas especiales -->
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="mb-0 fs-5">Ofertas Especiales</h4>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-danger d-flex align-items-center" role="alert">
+                        <i class="bi bi-lightning-fill me-2"></i>
+                        <div>¡20% de descuento en todos los smartphones!</div>
+                    </div>
+                    <div class="alert alert-warning d-flex align-items-center" role="alert">
+                        <i class="bi bi-clock-fill me-2"></i>
+                        <div>Oferta por tiempo limitado</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lista de productos -->
+        <div class="col-lg-9 col-md-8">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="mb-0">Nuestros Productos</h2>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-secondary">
+                        <i class="bi bi-grid-3x3-gap-fill"></i> Grid
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary">
+                        <i class="bi bi-list"></i> Lista
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Barra de búsqueda y filtros rápidos -->
+            <div class="row mb-4">
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar productos...">
+                        <button class="btn btn-primary" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select">
+                        <option selected>Ordenar por</option>
+                        <option>Precio: Menor a Mayor</option>
+                        <option>Precio: Mayor a Menor</option>
+                        <option>Más Populares</option>
+                        <option>Más Recientes</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Producto 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <div class="badge bg-danger position-absolute top-0 end-0 m-2">-15%</div>
+                        <img src="https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/0/AmazonStores/A1RKKUPIHCS9HS/3ad5f18c94a4ec200da935da8560d517.w6000.h3000._SL5000_CR0%2C0%2C5000%2C2500_SX3000_.jpg" class="card-img-top" alt="Producto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Honor 50</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="text-muted mb-0">Smartphone</p>
+                                <div>
+                                    <span class="text-decoration-line-through text-muted me-2">$599</span>
+                                    <span class="fw-bold text-danger">$509</span>
+                                </div>
+                            </div>
+                            <p class="card-text">Smartphone de última generación con cámara de alta resolución y rendimiento excepcional.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver detalles</button>
+                                    <button type="button" class="btn btn-sm btn-primary">Comprar</button>
+                                </div>
+                                <small class="text-muted">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <div class="badge bg-success position-absolute top-0 end-0 m-2">Nuevo</div>
+                        <img src="https://www.josech.tv/content/images/2023/06/Honor-Magic5-Pro_Yoast-image-packshot-review.jpg" class="card-img-top" alt="Producto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Honor Magic5 Pro</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="text-muted mb-0">Smartphone</p>
+                                <div>
+                                    <span class="fw-bold">$799</span>
+                                </div>
+                            </div>
+                            <p class="card-text">El nuevo buque insignia con pantalla curva, procesador potente y batería de larga duración.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver detalles</button>
+                                    <button type="button" class="btn btn-sm btn-primary">Comprar</button>
+                                </div>
+                                <small class="text-muted">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <div class="badge bg-info position-absolute top-0 end-0 m-2">Popular</div>
+                        <img src="https://amuletosde.com/wp-content/uploads/2021/09/WhatsApp-Image-2021-08-15-at-18.57.10.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Xiaomi Redmi Note</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="text-muted mb-0">Smartphone</p>
+                                <div>
+                                    <span class="fw-bold">$349</span>
+                                </div>
+                            </div>
+                            <p class="card-text">Este smartphone es perfecto para tu día a día con gran relación calidad-precio.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver detalles</button>
+                                    <button type="button" class="btn btn-sm btn-primary">Comprar</button>
+                                </div>
+                                <small class="text-muted">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <div class="badge bg-warning position-absolute top-0 end-0 m-2">Oferta</div>
+                        <img src="https://th.bing.com/th/id/OIP.TJ1EuNYpCgHzr3TDjPEb4AHaHa?rs=1&pid=ImgDetMain" class="card-img-top" alt="Producto 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Google Pixel</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="text-muted mb-0">Smartphone</p>
+                                <div>
+                                    <span class="text-decoration-line-through text-muted me-2">$699</span>
+                                    <span class="fw-bold text-danger">$599</span>
+                                </div>
+                            </div>
+                            <p class="card-text">Un producto ideal para los fanáticos de la fotografía con la mejor cámara del mercado.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver detalles</button>
+                                    <button type="button" class="btn btn-sm btn-primary">Comprar</button>
+                                </div>
+                                <small class="text-muted">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <div class="badge bg-primary position-absolute top-0 end-0 m-2">Destacado</div>
+                        <img src="https://i.blogs.es/fe29cc/img_7100/1366_2000.jpg" class="card-img-top" alt="Producto 5">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="text-muted mb-0">Smartphone</p>
+                                <div>
+                                    <span class="fw-bold">$899</span>
+                                </div>
+                            </div>
+                            <p class="card-text">Este iPhone de última generación es ideal para quienes desean estar a la vanguardia.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver detalles</button>
+                                    <button type="button" class="btn btn-sm btn-primary">Comprar</button>
+                                </div>
+                                <small class="text-muted">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 product-card">
+                        <div class="badge bg-secondary position-absolute top-0 end-0 m-2">Último modelo</div>
+                        <img src="https://th.bing.com/th/id/OIP.Q8TTL6Gs1YRUr_Ws0z_MOQHaDt?rs=1&pid=ImgDetMain" class="card-img-top" alt="Producto 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Samsung Galaxy Z Fold</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="text-muted mb-0">Smartphone</p>
+                                <div>
+                                    <span class="fw-bold">$1,299</span>
+                                </div>
+                            </div>
+                            <p class="card-text">Smartphone plegable con pantalla flexible y características que te sorprenderán.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver detalles</button>
+                                    <button type="button" class="btn btn-sm btn-primary">Comprar</button>
+                                </div>
+                                <small class="text-muted">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Paginación -->
+            <nav class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" tabindex="-1" aria-disabled="true">Anterior</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link">1</a></li>
+                    <li class="page-item"><a class="page-link">2</a></li>
+                    <li class="page-item"><a class="page-link">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Siguiente</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<!-- Formulario de suscripción mejorado -->
+<div class="bg-dark text-white py-5 mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h3 class="fw-bold">¡No te pierdas nuestras ofertas!</h3>
+                <p class="lead">Suscríbete a nuestro boletín y recibe promociones exclusivas, novedades y descuentos especiales directamente en tu correo.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-dark border-light">
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="emailSubscription" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control form-control-lg" id="emailSubscription" placeholder="tu@email.com">
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="acceptTerms">
+                                <label class="form-check-label" for="acceptTerms">
+                                    Acepto recibir comunicaciones comerciales
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Suscribirme</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        @if (true) {
+            <app-menu />
+        }
+    </div>
+</div>

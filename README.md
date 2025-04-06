@@ -1,59 +1,129 @@
-# T5Boostrap
+# Proyecto T5-Bootstrap
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+## Descripción General
 
-## Development server
+Este proyecto es una aplicación web completa construida con Angular y Bootstrap 5, que muestra varios componentes y características. Demuestra prácticas modernas de desarrollo web con un enfoque en diseño responsivo e interfaces de usuario interactivas.
 
-To start a local development server, run:
+## 📋 Características
 
+La aplicación consta de varias secciones clave:
+
+- **Portafolio** - Un portafolio personal que muestra proyectos con tarjetas interactivas y un carrusel Swiper
+- **Blog** - Un diseño de blog con publicaciones categorizadas y diseño responsivo
+- **Tienda** - Una interfaz de comercio electrónico con listados de productos
+- **Dashboard** - Un panel administrativo con gráficos y visualización de datos
+
+## 🛠️ Tecnologías Utilizadas
+
+- **Angular** - Framework frontend (última versión)
+- **Bootstrap 5** - Framework CSS para diseño responsivo
+- **Chart.js** - Para visualización de datos en el dashboard
+- **Swiper** - Para carruseles táctiles en el portafolio
+- **Bootstrap Icons** - Para iconografía en toda la aplicación
+
+## 🏗️ Estructura del Proyecto
+
+```bash
+src/
+├── 📁 app/
+│   ├── 📁 components/
+│   │   ├── 📄 blog/
+│   │   ├── 📄 dashboard/
+│   │   ├── 📄 menu/
+│   │   ├── 📄 portfolio/
+│   │   └── 📄 tienda/
+│   ├── 📄 app.component
+│   ├── 📄 app.config
+│   └── 📄 app.routes
+├── 📁 public/
+│   └── 📁 images/
+└── 📄 styles.css
+```
+
+## 📱 Componentes
+
+### Componente Menu
+Un componente de navegación que proporciona enlaces a todas las secciones principales de la aplicación. Está diseñado para ser reutilizable en diferentes páginas.
+
+### Componente Portfolio
+Una sección de portafolio personal que incluye:
+- Sección de introducción interactiva
+- Muestra de proyectos con carrusel Swiper
+- Formulario de contacto
+- Enlaces a redes sociales y pie de página
+
+### Componente Blog
+Un diseño de blog con:
+- Encabezado destacado con imagen de fondo
+- Barra lateral categorizada
+- Tarjetas de publicaciones de blog con imágenes y etiquetas
+- Formulario de suscripción al boletín
+
+### Componente Tienda
+Una interfaz de comercio electrónico con:
+- Listados de productos con imágenes y calificaciones
+- Funcionalidad de carrito de compras
+- Opciones de filtrado de productos
+
+### Componente Dashboard
+Un panel administrativo que incluye:
+- Visualización de métricas clave
+- Gráficos interactivos usando Chart.js
+- Tabla de gestión de usuarios
+- Funcionalidad de exportación de datos
+
+## 🚀 Primeros Pasos
+
+### Requisitos Previos
+- Node.js (v14 o superior)
+- npm (v6 o superior)
+
+### Instalación
+
+1. Clona el repositorio
+```bash
+git clone https://github.com/sago-code/t5-boostrap.git
+```
+2. Navega al directorio del proyecto
+```bash
+cd t5-boostrap
+```
+3. Instala las dependencias
+```bash
+npm install
+```
+4. Inicia el servidor de desarrollo
 ```bash
 ng serve
+npm run start
 ```
+5. Abre tu navegador y navega a http://localhost:4200
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 📝 Uso
+La aplicación proporciona una experiencia de navegación fluida entre diferentes secciones:
 
-## Code scaffolding
+- Utiliza el menú de navegación para cambiar entre Portafolio, Blog, Tienda y Dashboard
+- Explora el Portafolio para ver muestras de proyectos
+- Navega por el Blog para ver artículos y publicaciones
+- Consulta la Tienda para ver listados de productos
+- Accede al Dashboard para funciones administrativas y visualización de datos
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🔧 Desarrollo
+Este proyecto fue generado con Angular CLI. Aquí hay algunos comandos útiles:
 
 ```bash
-ng generate component component-name
-```
+# Servidor de desarrollo
+ng serve
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
+# Construir el proyecto
 ng build
 ```
+## 📚 Recursos Adicionales
+- Documentación de Angular
+- Documentación de Bootstrap
+- Documentación de Chart.js
+- Documentación de Swiper
+## 📄 Licencia
+Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo LICENSE para más detalles.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Creado por Santiago Orjuela Vera © 2025
